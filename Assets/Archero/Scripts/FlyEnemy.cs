@@ -13,7 +13,6 @@ public class FlyEnemy : Enemy
         if (isCanMove)
         {
             Move(PlayerVector().normalized);
-            isMove = true;
 
             distanceTraveled += moveSpeed * Time.deltaTime;
             if (distanceTraveled >= moveDistance || PlayerVector().magnitude < 10)
